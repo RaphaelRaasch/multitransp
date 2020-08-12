@@ -29,6 +29,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'coleta',
+    'item',
+    'item_viagem',
+    'viagem',
+    'veiculo',
+    'motorista',
 ]
 X_FRAME_OPTIONS='SAMEORIGIN' 
 
@@ -65,6 +70,13 @@ WSGI_APPLICATION = 'hermes.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
+'''DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}'''
 
 DATABASES = {
     'default': {
