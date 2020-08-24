@@ -11,4 +11,4 @@ class ItemViagem(models.Model):
     valor_total = models.DecimalField('Valor Toral', max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return self.viagem
+        return f'{self.viagem}'
